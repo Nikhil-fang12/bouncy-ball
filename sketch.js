@@ -11,7 +11,7 @@ function setup() {
   var groundOption = {
     isStatic: true
   }
-  ground = Bodies.rectangle{400,390,800,20,groundOption};
+  ground = Bodies.rectangle(400,390,800,20,groundOption);
   World.add(world,ground);
 
   var ballOption = {
