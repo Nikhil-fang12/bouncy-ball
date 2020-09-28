@@ -21,13 +21,13 @@ function setup() {
     restitution: 1.0
   }
   ball = Bodies.circle(200,100,20,ballOption);
-  World.add(world.ball);
+  World.add(world,ball);
 }
 
 function draw() {
   background(255,255,255);  
 
-  Engine.uptade(engine);
+  Engine.update(engine);
 
   rectMode(CENTER);
   rect(ground.position.x,ground.position.y,800,20);
