@@ -8,6 +8,9 @@ var ground,ball;
 function setup() {
   createCanvas(800,400);
 
+  engine = Engine.create();
+  world = engine.world;
+
   var groundOption = {
     isStatic: true
   }
